@@ -33,10 +33,10 @@ export default function All() {
 
 
   return <>
-  {        console.log(gamesList)}{isLoading?<ReloadingPage/>:
+  {isLoading?<ReloadingPage/>:
     <div className="container my-5 p-3">
         <div className="row g-4 my-5">
-        {gamesList.slice(0,next).map((game ,index) => <GameItem key={index} game={game} />)}
+        {gamesList.slice(0 , next).map((game ,index) => <GameItem key={index} game={game} />)}
         </div>
         <div className="d-flex justify-content-center"><button onClick={ShowMoreBtn} className='btn btn-outline-secondary'>More Games<i className="bi bi-chevron-right"></i></button></div>
     </div>}

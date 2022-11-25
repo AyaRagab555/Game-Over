@@ -25,7 +25,7 @@ export default function Home() {
     },[])
 
   return <>
-  {        console.log(gamesList)}{isLoading == true?<ReloadingPage/>:<>
+ {isLoading == true?<ReloadingPage/>:<>
 
     <div className="header-desc my-5 p-4 text-center">
         <div className="my-5">

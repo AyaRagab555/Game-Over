@@ -26,7 +26,7 @@ export default function GameDetails() {
         getGamesData(para.id)
         setIsLoading(true)
     },[])
-  return <>{console.log(gameDetails)}{isLoading?<ReloadingPage/>
+  return <>{isLoading?<ReloadingPage/>
   :
   <div className="container my-5 p-3">
         <div className="row g-4 my-5">

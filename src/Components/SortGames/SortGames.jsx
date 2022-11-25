@@ -38,7 +38,7 @@ export default function SortGames() {
        }
 
   return <>
-  {        console.log(gamesList)}{isLoading?<ReloadingPage/>:
+  {isLoading?<ReloadingPage/>:
     <div className="container my-5 p-3">
         <div className="row g-4 my-5">
         {gamesList.slice(0,next).map((game ,index) => <GameItem key={index} game={game} />)}
