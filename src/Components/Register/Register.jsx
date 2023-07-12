@@ -27,7 +27,7 @@ export default function Register() {
     }
 
     async function sendUserData () {
-       let {data} = await axios.post(`https://route-egypt-api.herokuapp.com/signup`,user);
+       let {data} = await axios.post(`https://movies-api.routemisr.com/signup`,user);
        console.log(data);
        if (data.message == "success"){
         setIsLoading(false);

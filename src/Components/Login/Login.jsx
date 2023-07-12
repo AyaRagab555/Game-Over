@@ -26,7 +26,7 @@ export default function Login({saveUserData}) {
   }
   
   async function sendLoginUserData () {
-     let {data} = await axios.post(`https://route-egypt-api.herokuapp.com/signin`,user);
+     let {data} = await axios.post(`https://movies-api.routemisr.com/signin`,user);
      console.log(data);
      if (data.message == "success"){
       setIsLoading(false);
@@ -77,7 +77,7 @@ export default function Login({saveUserData}) {
                   {isLoading == true?<i className='fas fa-spinner fa-spin text-white'></i>: "Login"}</button>
                 <hr />
                 <a className='noHover d-block text-decoration-none text-third pointer' onClick={()=>alert("ههه اعمل اكونت جديد")}>Forget Password?</a>
-                <p className='m-0 '>Not a member yet? <Link className="noHover text-decoration-none text-third" to="Login">Create Account&gt;</Link></p>
+                <p className='m-0 '>Not a member yet? <Link className="noHover text-decoration-none text-third" to="register">Create Account&gt;</Link></p>
             </form>
         </div></div>
     </div>
